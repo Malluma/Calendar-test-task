@@ -1,0 +1,31 @@
+@import '../../styles/variables.scss';
+
+.footer{
+  font-size: 27px;
+  color: $secondaryColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $backgroundSecondary;
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+  padding: 0.8em 1.7em;
+  border-top: 1px solid $tableColor;
+  
+  &__delete{
+    font-size: 27px;
+    color: $secondaryColor;
+    border: none;
+    background-color: inherit;
+    &:hover, &:focus{
+      color: $secondaryColorDark;
+    }
+    &_invisible{
+      opacity: 0;
+    }
+
+  }
+}
+
+
