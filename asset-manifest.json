@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Calendar-test-task/static/css/main.03c5ac62.css",
-    "main.js": "/Calendar-test-task/static/js/main.91c55851.js",
+    "main.css": "/Calendar-test-task/static/css/main.e6c13ad2.css",
+    "main.js": "/Calendar-test-task/static/js/main.56c23c0e.js",
     "index.html": "/Calendar-test-task/index.html",
     "static/media/forward.svg": "/Calendar-test-task/static/media/forward.c3ae122e100b3836a4fe85d628221843.svg",
     "static/media/back.svg": "/Calendar-test-task/static/media/back.77e66f487e1164e52b790ccbe919b70e.svg",
-    "main.03c5ac62.css.map": "/Calendar-test-task/static/css/main.03c5ac62.css.map",
-    "main.91c55851.js.map": "/Calendar-test-task/static/js/main.91c55851.js.map"
+    "main.e6c13ad2.css.map": "/Calendar-test-task/static/css/main.e6c13ad2.css.map",
+    "main.56c23c0e.js.map": "/Calendar-test-task/static/js/main.56c23c0e.js.map"
   },
   "entrypoints": [
-    "static/css/main.03c5ac62.css",
-    "static/js/main.91c55851.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.56c23c0e.js"
   ]
 }
