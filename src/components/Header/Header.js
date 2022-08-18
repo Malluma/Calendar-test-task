@@ -27,6 +27,7 @@ function Header(props) {
 
   const days = createDaysArray(props.firstDay);
   const daysOfWeek = ["M", "T", "W", "T", "F", "S", "S"];
+  const today = formatDateToString(new Date(2019, 2, 29));
 
   return (
     <HeaderWrapper>
@@ -43,7 +44,6 @@ function Header(props) {
         </DaysOfWeek>
         <Days>
           {days.map((day, index) => {
-            const today = formatDateToString(new Date(2019, 2, 29));
             const dateDay = day.substring(0, 2);
             const currentDayIsToday = day === today ? "true" : "";
             return (
@@ -57,11 +57,11 @@ function Header(props) {
         </Days>
         <MonthSelection>
           <MonthChangeBtn>
-            <BackArrowSvg/>
+            <BackArrowSvg />
           </MonthChangeBtn>
           <div>{"March 2019"}</div>
           <MonthChangeBtn>
-            <ForwardArrowSvg/>
+            <ForwardArrowSvg />
           </MonthChangeBtn>
         </MonthSelection>
       </Calendar>

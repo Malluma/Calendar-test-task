@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 import {
   backgroundMain,
@@ -6,7 +6,7 @@ import {
   secondaryColor,
   secondaryColorDark,
   tableColor,
-} from '../../styles/variables.styles';
+} from "../../styles/variables.styles";
 
 export const HeaderWrapper = styled.header`
   font-size: calc(15px + 2vmin);
@@ -21,7 +21,7 @@ export const HeaderWrapper = styled.header`
   }
 `;
 
-export const HeaderTop= styled.div`
+export const HeaderTop = styled.div`
   display: flex;
   justify-content: space-between;
 `;
@@ -36,16 +36,17 @@ export const HeaderTitle = styled.h1`
 `;
 
 export const AddEventBtn = styled.button`
-   font-size: 55px;
-    color: ${secondaryColor};
-    background-color: inherit;
-    border: none;
-    cursor: pointer;
-    margin-right: 2.7rem;
-    &:hover,&:focus{
-      outline: none;
-      color: ${secondaryColorDark};
-    }
+  font-size: 55px;
+  color: ${secondaryColor};
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  margin-right: 2.7rem;
+  &:hover,
+  &:focus {
+    outline: none;
+    color: ${secondaryColorDark};
+  }
 `;
 
 export const Calendar = styled.div`
@@ -94,10 +95,11 @@ export const Day = styled.div`
   cursor: pointer;
   border-radius: 50%;
 
-  color: ${(props) => props.today ? 'white' : ''};
-  background-color: ${(props) => props.today ? secondaryColor : ''};
+  color: ${(props) => (props.today ? "white" : "")};
+  background-color: ${(props) => (props.today ? secondaryColor : "")};
 
-  &:hover, &:focus{
+  &:hover,
+  &:focus {
     background-color: ${secondaryColorDark};
     color: ${backgroundMain};
     outline: none;
@@ -105,7 +107,7 @@ export const Day = styled.div`
 `;
 
 export const MonthSelection = styled.div`
-  display:flex;
+  display: flex;
   justify-content: space-between;
   cursor: default;
   padding: 0 0.5rem 0.4rem 0.5rem;
@@ -117,21 +119,22 @@ export const MonthChangeBtn = styled.button`
   &:focus {
     outline: none;
   }
-  &:focus *{
+  &:focus * {
     fill: ${secondaryColorDark};
   }
 
-  & > svg{
+  & > svg {
     fill: ${secondaryColor};
     cursor: pointer;
-    &:hover, &:focus{
+    &:hover,
+    &:focus {
       fill: ${secondaryColorDark};
     }
   }
-  `;
+`;
 
 export const currentMonth = styled.div`
-  display:flex;
+  display: flex;
   justify-content: space-between;
   cursor: default;
   padding: 0 0.5rem 0.4rem 0.5rem;
