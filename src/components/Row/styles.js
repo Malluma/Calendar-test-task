@@ -6,7 +6,7 @@ export const RowWrapper = styled.div`
 `;
 
 export const RowTime = styled.div`
-  font-size: 21px;
+  font-size: 20px;
   color: ${timeColor};
   position: relative;
   bottom: 0.6em;
