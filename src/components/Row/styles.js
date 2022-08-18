@@ -7,6 +7,7 @@ export const RowWrapper = styled.div`
 
 export const RowTime = styled.div`
   font-size: 20px;
+  font-variant-numeric: tabular-nums;
   color: ${timeColor};
   position: relative;
   bottom: 0.6em;
