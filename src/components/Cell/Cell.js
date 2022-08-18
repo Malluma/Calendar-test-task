@@ -1,8 +1,8 @@
-import "./Cell.scss";
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { setActiveCell } from '../../store/reducers/CalendarSlice';
 import { generateCellIndex } from '../../utils/utils';
+import { CellWrapper, Cell as StyledCell } from './styles.js';
 
 function Cell(props) {
   
@@ -14,16 +14,11 @@ function Cell(props) {
     dispatch(setActiveCell({cellIndex: cellIndex}));
   }
 
-  const noted = cell.hasEvent ? "cell cell_noted" : "";
-  const firstCellInLine = props.firstCellInLine ? "cell-wrap_first-cell-in-line" : "";
-  const cellClassName = `cell ${noted} ${firstCellInLine}`;
-  const cellWrapClassName = `cell-wrap ${firstCellInLine}`;
-
   return (
-    <div className={cellWrapClassName}>
-      <div className={cellClassName} tabIndex={0} onFocus={(event) => handleCellFocus()}>
-      </div>
-    </div>
+    <CellWrapper firstCellInLine = {props.firstCellInLine}>
+      <StyledCell hasEvent = {cell.hasEvent} tabIndex={0} onFocus={handleCellFocus}>
+      </StyledCell>
+    </CellWrapper>
   );
 }
 

@@ -1,24 +1,24 @@
-import "./Footer.scss";
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { deleteEvent } from '../../store/reducers/CalendarSlice';
+import {FooterWrapper, DeleteBtn} from './styles.js';
 
 function Footer(props) {
 
   const dispatch = useDispatch();
   const activeCellIndex = useSelector(state => state.calendar.activeCell);
   const activeCell = useSelector(state => state.calendar.cells[activeCellIndex]);
-  const deleteInvisible = (activeCellIndex === '' || activeCell.hasEvent === false) ? 'footer__delete_invisible' : '';
+  const deleteBtnOpacity = (activeCellIndex === '' || activeCell.hasEvent === false) ? '0' : '1';
 
-  function handleDeleteClick(cellIndex){
-    dispatch(deleteEvent({cellIndex: cellIndex}));
+  function handleDeleteClick(){
+    dispatch(deleteEvent({cellIndex: activeCellIndex}));
   }
 
   return (
-    <div className='footer'>
+    <FooterWrapper>
       <div className='footer__today'>Today</div>
-      <button className={`footer__delete ${deleteInvisible}`} onClick={() => {handleDeleteClick(activeCellIndex)}}>Delete</button>
-    </div>
+      <DeleteBtn opacity={deleteBtnOpacity} onClick={handleDeleteClick}>Delete</DeleteBtn>
+    </FooterWrapper>
   );
 }
 
