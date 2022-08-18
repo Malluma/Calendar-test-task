@@ -3,7 +3,8 @@
 
 # interview-calendar (тестовое задание)
 
-Работающее приложение посмотреть можно тут: https://malluma.github.io/Calendar-test-task/
+Работающее приложение посмотреть можно тут: https://malluma.github.io/Calendar-test-task/.
+
 Задание выполнила с использованием Redux toolkit для управления state.
 
 ## Веб приложение с недельным календарем
