@@ -3,7 +3,9 @@
 
 # interview-calendar (тестовое задание)
 
-Работающее приложение посмотреть можно тут: https://malluma.github.io/Calendar-test-task/
+Работающее приложение посмотреть можно тут: https://malluma.github.io/Calendar-test-task/.
+
+Задание выполнила с использованием Redux toolkit для управления state.
 
 ## Веб приложение с недельным календарем
 Нужно реализовать статичное веб приложение (SPA) используя create-react-app, React, styled-components и выложить его на Heroku.
@@ -14,3 +16,18 @@
 
 Макет c версткой календаря для мобильных браузеров:
 ![Основной вид календаря](./imagesForReadMe/1.%20Main%20Mobile@2x.png)
+
+## Развертывание проекта
++ Клонирование репозитория:
+
+  `git clone git@github.com:Malluma/Calendar-test-task.git`
++ Установка зависимостей:
+
+  `npm install`
++ Запуск проекта:
+
+  `npm start` (для завершения работы сервера нажать `ctrl+c`)
+
+
+
+
