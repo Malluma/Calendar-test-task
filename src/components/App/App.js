@@ -1,13 +1,17 @@
 import Row from "../Row/Row";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import { useDispatch } from "react-redux";
+import { useDispatch} from "react-redux";
+import { useEffect } from "react";
 import { loadCells } from "../../store/reducers/CalendarSlice";
 import { AppWrapper } from "./styles.js";
 
 function App() {
   const dispatch = useDispatch();
-  dispatch(loadCells({ firstDate: "2019-03-25" }));
+
+  useEffect(() => {
+    dispatch(loadCells({ firstDate: "2019-03-25" }));
+  }, []);
 
   const times = [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
